@@ -52,3 +52,32 @@
     height: 24px;
     pointer-events: none; /*desabilitar interações do usuário com um elemento*/
 }
+
+@media screen and (max-width:768px){ /*Para que eue comece a ter essas alterações no momento que a minha tela ter a largura de 758px, parametro que eu passei*/
+    .cabecalho__nav_list{
+        grid-template-areas: 
+        "logo sobre login perfil carrinho" /*aqui eu aportei os restantes do item, assim resultadondo em cinco espaços*/
+        "input input input input input"; /*aqui eu apontei que o input teria cinco espaços*/
+        grid-template-columns: 1fr 2fr .5fr .5fr .5fr;
+    }
+    /*apontei cada elemento, indicando que ele iria receber a configuração do "grid-template-areas"*/
+    .cabecalho__logo{ 
+        grid-area: logo;
+        justify-self: center; /*centralizar o elemento*/
+    }
+    .cabecalho__nav_list_item-sobre{
+        grid-area: sobre;
+    }
+    .cabecalho__nav_list_item-login{
+        grid-area: login;
+    }
+    .cabecalho__nav_list_item-perfil{
+        grid-area: perfil;
+    }
+    .cabecalho__nav_list_item-carrinho{
+        grid-area: carrinho;
+    }
+    .cabecalho__nav_list_item-input{
+        grid-area: input;
+    }
+}
