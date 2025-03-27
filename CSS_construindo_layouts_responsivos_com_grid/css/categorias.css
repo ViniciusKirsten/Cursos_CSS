@@ -60,3 +60,13 @@
     color: var(--cor-texto-secundario);
     margin-bottom: 40px;
 }
+
+.categorias__list_item_titulo{
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 37.2px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto-principal);
+    padding: 16px;
+    text-align: center;
+}
